@@ -41,3 +41,43 @@ footer {
     border-top: 3px ridge silver;
     margin-top: 2em;
 }
+.imagecarousel {
+    position: relative;
+}
+.image {
+    display: none;
+}
+image:first-of-type {
+    display: block;
+}
+.image img {
+   border-radius: 10px; 
+}
+.prev, .next {
+    position: absolute;
+    color: darkblue;
+    font-size: 170%;
+    top: 50%;
+    transform: translateY(50%);
+}
+.prev {
+    left: 15px;
+}
+.next {
+    right: 15px;
+}
+.prev:hover, .next:hover {
+    
+}
+.prev:hover{
+
+}
+.next:hover {
+
+}
+.dots {
+
+}
+.dot {
+
+}
