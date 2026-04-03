@@ -47,7 +47,7 @@ footer {
 .image {
     display: none;
 }
-image:first-of-type {
+.image:first-of-type {
     display: block;
 }
 .image img {
@@ -55,10 +55,13 @@ image:first-of-type {
 }
 .prev, .next {
     position: absolute;
-    color: darkblue;
+    color: rgba(0, 0, 139, 0.567);
     font-size: 170%;
     top: 50%;
     transform: translateY(50%);
+    padding: 0.3em;
+    border-radius: 50vh;
+    transition: all ease-in-out 300ms;
 }
 .prev {
     left: 15px;
@@ -67,17 +70,29 @@ image:first-of-type {
     right: 15px;
 }
 .prev:hover, .next:hover {
-    
-}
-.prev:hover{
-
-}
-.next:hover {
-
+    background-color: black;
+    color: gold;
+    cursor: pointer;
 }
 .dots {
-
+    display: flex;
+    gap: 12px;
+    justify-content: center;
+    margin-top: 3px;
 }
 .dot {
-
+    width: 10px;
+    aspect-ratio: 1;
+    background-color: silver;
+    border-radius: 50vh;
+}
+.active {
+    background-color: gold;
+}
+.fadeout {
+    animation: fade 2000ms;
+}
+@keyframes fade {
+    from {opacity: .2;}
+    to {opacity: 1;}
 }
