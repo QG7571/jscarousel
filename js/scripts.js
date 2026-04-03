@@ -33,3 +33,8 @@ function showImage(i) {
     theImages[intIndex].style.display = "block";
     theDots[intIndex].className += " active";
 }
+
+// Scrolling
+setInterval(() => {
+    showImage(1);
+}, 5000);
